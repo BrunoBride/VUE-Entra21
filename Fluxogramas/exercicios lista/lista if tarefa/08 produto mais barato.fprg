@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-18 10:17:30 "/>
+        <attribute name="created" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE4OyIwNzo0Mjo1NiAiOzIzNzM="/>
+        <attribute name="edited" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE4OyIxMDoxNzozMCAiOzE5OzI1MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="8.Fa&#231;a um programa que pergunte o pre&#231;o de tr&#234;s produtos e informe qual produto voc&#234; deve comprar, sabendo que a decis&#227;o &#233; sempre pelo mais barato."/>
+            <declare name="p1, p2, p3, barato" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor dos tr&#234;s produtos:&quot;" newline="True"/>
+            <input variable="p1"/>
+            <input variable="p2"/>
+            <input variable="p3"/>
+            <if expression="p1 &lt; p2 and p1 &lt; p3">
+                <then>
+                    <output expression="&quot;O produto mais barato custa: &quot;&amp;p1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="p2 &lt; p3">
+                        <then>
+                            <output expression="&quot;O produto mais barato custa: &quot;&amp;p2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;O produto mais barato custa: &quot;&amp;p3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

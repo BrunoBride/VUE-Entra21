@@ -1,0 +1,77 @@
+01. (v&f) ou (f&v) =================== f
+      f		f
+
+02. (vov) e  (fof) =================== f
+      v		f
+
+03. (vef) ou (vev) e  (fov) ========== v
+      f		v	v
+	   v	
+	
+04. (vof) e  (fev) ou (vef) ========== f
+      v		f	f
+	   f
+		
+05. (vev) ou (fef) e  (vof) ========== v
+      v		f	v
+	   v	
+
+06. (fof) e  (vev) ou (fev) ========== f
+      f		v	f
+	   f
+
+07. (vof) e  (fov) e  (vef) ========== f
+      v		v	f
+	   v
+
+08. (vov) ou (fof) ou (vef) e (fev) == f
+      v		f	f	f
+	   v		v
+
+09. (vef) ou (fev) e  (vof) ========== f
+      f		f	v
+	   f	
+
+10. (vof) e  (fev) ou (vef) ========== f
+      v		f	f
+	   f
+
+11. (vev) ou (fef) e  (vef) ========== f
+      v		f	f
+	   v
+
+12. (vof) e  (fov) e  (vef) ========== f
+      v		v	f
+	   v
+
+13. (vov) ou (fof) ou (vef) e  (fev) == f
+      v		f	f	f
+	   v	   v
+
+14. (vef) ou (vev) e  (fov) e  (fef) == f
+      f		v	v	f
+	   v	   v
+
+15. (fov) e  (vof) e  (fev) e  (vef) == f
+      v		v	f	f
+	   v	   f
+
+16. (vov) ou (fof) e  (vef) e  (fev) == f
+      v		f	f	f
+	   v	   f
+
+17. (vev) ou (fef) e  (vof) ou (fov) == v
+      v		f	v	v
+	   v   	   v
+
+18. (fov) e  (vof) ou (vef) e  (fev) == f
+      v		v	f	f
+	   v	   v	
+
+19. (vef) ou (fev) e  (vof) e  (fev) == f
+      f		f	v	f
+	   f	   f
+
+20. (vof) e  (fev) ou (vef) ou (fov) == v
+      v		f	f	v
+	   f	   f

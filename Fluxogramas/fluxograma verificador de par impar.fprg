@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-17 10:34:15 "/>
+        <attribute name="created" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE3OyIxMDoyOToyOCAiOzIzNzA="/>
+        <attribute name="edited" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE3OyIxMDozNDoxNSAiOzE7MjQ3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nr, resto" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero&quot;" newline="True"/>
+            <input variable="nr"/>
+            <assign variable="resto" expression="nr %2"/>
+            <if expression="resto == 0">
+                <then>
+                    <output expression="&quot;O n&#250;mero &#233; Par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O n&#250;mero &#233; &#205;mpar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

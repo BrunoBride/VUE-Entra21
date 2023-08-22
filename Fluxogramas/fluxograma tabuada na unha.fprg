@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-17 10:42:33 "/>
+        <attribute name="created" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE3OyIxMDozNTozMSAiOzIzNjE="/>
+        <attribute name="edited" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE3OyIxMDo0MjozMyAiOzE7MjQ2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Qual a tabuada que voc&#234; deseja cacular?&quot;" newline="True"/>
+            <declare name="nr, resultado" type="Integer" array="False" size=""/>
+            <input variable="nr"/>
+            <output expression="nr &amp; &quot; x 1 = &quot; &amp; nr * 1" newline="True"/>
+            <output expression="nr &amp; &quot; x 2 = &quot; &amp; nr * 2" newline="True"/>
+            <output expression="nr &amp; &quot; x 3 = &quot; &amp; nr * 3" newline="True"/>
+            <output expression="nr &amp; &quot; x 4 = &quot; &amp; nr * 4" newline="True"/>
+            <output expression="nr &amp; &quot; x 5 = &quot; &amp; nr * 5" newline="True"/>
+            <output expression="nr &amp; &quot; x 6 = &quot; &amp; nr * 6" newline="True"/>
+            <output expression="nr &amp; &quot; x 7 = &quot; &amp; nr * 7" newline="True"/>
+            <output expression="nr &amp; &quot; x 8 = &quot; &amp; nr * 8" newline="True"/>
+            <output expression="nr &amp; &quot; x 9 = &quot; &amp; nr * 9" newline="True"/>
+            <output expression="nr &amp; &quot; x 10 = &quot; &amp; nr * 10" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

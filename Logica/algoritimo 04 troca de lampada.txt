@@ -1,0 +1,9 @@
+algoritimo: troca de lampada;
+
+1. desligar disjuntor
+2. remover a lampada que será substituida;
+3. instalar a lampada nova;
+4. religar o disjuntor;
+5. verificar o funcionamento da lampada;
+6. se a lampada funcionar organizar equipamentos nao utilizados, 
+7. senão, repetir os passos 1 ao 6;

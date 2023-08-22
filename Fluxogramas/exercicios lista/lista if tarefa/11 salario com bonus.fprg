@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bruno"/>
+        <attribute name="about" value="&#9;Fa&#231;a um programa que recebe o sal&#225;rio de um colaborador e o reajuste segundo o seguinte crit&#233;rio, baseado no sal&#225;rio atual:&#13;&#10;&#9;sal&#225;rios at&#233; R$ 280,00 (incluindo) : aumento de 20%&#13;&#10;&#9;sal&#225;rios entre R$ 280,00 e R$ 700,00 : aumento de 15%&#13;&#10;&#9;sal&#225;rios entre R$ 700,00 e R$ 1500,00 : aumento de 10%&#13;&#10;&#9;sal&#225;rios de R$ 1500,00 em diante : aumento de 5% Ap&#243;s o aumento ser realizado, informe na tela:&#9;o sal&#225;rio antes do reajuste;&#9;o percentual de aumento aplicado;&#9;o valor do aumento; o novo sal&#225;rio, ap&#243;s o aumento."/>
+        <attribute name="saved" value="2023-08-20 10:35:28 "/>
+        <attribute name="created" value="YnJ1bm87QlJJREU7MjAyMy0wOC0yMDsiMDk6NTU6NTkgIjsyMTEz"/>
+        <attribute name="edited" value="YnJ1bm87QlJJREU7MjAyMy0wOC0yMDsiMTA6MzU6MjggIjsyOzIyMDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salarioBase, salarioNovo, valorAumento, percentual" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor do s&#225;lario para calculo do reajuste&quot;" newline="True"/>
+            <input variable="salarioBase"/>
+            <if expression="salarioBase &lt;= 280">
+                <then>
+                    <assign variable="valorAumento" expression="salarioBase * 0.20"/>
+                    <assign variable="salarioNovo" expression="salarioBase + valorAumento"/>
+                    <output expression="&quot;O novo salario &#233; de: &quot;&amp;salarioNovo&amp;&quot; pois foi acrescido 20% que corresponde a: &quot;&amp;valorAumento&amp;&quot; de aumento&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="salarioBase &gt; 280 and salarioBase &lt;= 700">
+                        <then>
+                            <assign variable="valorAumento" expression="salarioBase * 0.15"/>
+                            <assign variable="salarioNovo" expression="salarioBase + valorAumento"/>
+                            <output expression="&quot;O novo salario &#233; de: &quot;&amp;salarioNovo&amp;&quot; pois foi acrescido 15% que corresponde a: &quot;&amp;valorAumento&amp;&quot; de aumento&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="salarioBase &gt; 700 and salarioBase &lt;= 1500">
+                                <then>
+                                    <assign variable="valorAumento" expression="salarioBase * 0.10"/>
+                                    <assign variable="salarioNovo" expression="salarioBase + valorAumento"/>
+                                    <output expression="&quot;O novo salario &#233; de: &quot;&amp;salarioNovo&amp;&quot; pois foi acrescido 10% que corresponde a: &quot;&amp;valorAumento&amp;&quot; de aumento&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="salarioBase &gt; 1500">
+                                        <then>
+                                            <assign variable="valorAumento" expression="salarioBase * 0.05"/>
+                                            <assign variable="salarioNovo" expression="salarioBase + valorAumento"/>
+                                            <output expression="&quot;O novo salario &#233; de: &quot;&amp;salarioNovo&amp;&quot; pois foi acrescido 5% que corresponde a: &quot;&amp;valorAumento&amp;&quot; de aumento&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

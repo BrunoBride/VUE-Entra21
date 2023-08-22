@@ -1,0 +1,9 @@
+algoritimo: solicitar uber;
+
+1. abrir o aplicativo;
+2. solicitar o tipo da corrida;
+3. informar o endereco de destino;
+4. confirmar local de embarque;
+5. confirmar a forma de pagamento
+6. embarcar no veículo quando disponível;
+7. desembarcar quando chegar ao destino;
