@@ -6,4 +6,4 @@ const prompt = promptCall()
 
 let num1 = Number(prompt('Digite um número: '))
 
-console.log('A metade do valore informado é: '+ Math.pow(num1,2))
+console.log('O quadrado do valor informado é: '+ Math.pow(num1,2))

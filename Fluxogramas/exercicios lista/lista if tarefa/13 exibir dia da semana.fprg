@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-22 08:35:38 "/>
+        <attribute name="created" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTIyOyIwODoyNzozMyAiOzIzNjc="/>
+        <attribute name="edited" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTIyOyIwODozNTozOCAiOzE7MjQ3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="13.Fa&#231;a um Programa que leia um n&#250;mero e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inv&#225;lido."/>
+            <declare name="nr" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero entre 1 e 7&quot;" newline="True"/>
+            <input variable="nr"/>
+            <if expression="nr &gt;0 and nr &lt;= 7">
+                <then>
+                    <if expression="nr = 1">
+                        <then>
+                            <output expression="&quot;Domingo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="nr = 2">
+                                <then>
+                                    <output expression="&quot;Segunda&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="nr = 3">
+                                        <then>
+                                            <output expression="&quot;Ter&#231;a&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="nr = 4">
+                                                <then>
+                                                    <output expression="&quot;Quarta&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="nr = 5">
+                                                        <then>
+                                                            <output expression="&quot;Quinta&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="nr = 6">
+                                                                <then>
+                                                                    <output expression="&quot;Sextou&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="nr = 7">
+                                                                        <then>
+                                                                            <output expression="&quot;Sabad&#227;o&quot;" newline="True"/>
+                                                                        </then>
+                                                                        <else/>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Apenas n&#250;meros entre 1 e 7&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

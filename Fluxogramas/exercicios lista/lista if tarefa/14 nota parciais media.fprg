@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-22 08:53:16 "/>
+        <attribute name="created" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTIyOyIwODoyNzozMyAiOzIzNjc="/>
+        <attribute name="edited" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTIyOyIwODo1MzoxNiAiOzU7MjQ3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="14.Fa&#231;a um programa que l&#234; as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua m&#233;dia. A atribui&#231;&#227;o de conceitos obedece &#224; tabela abaixo:&#13;&#10; M&#233;dia de Aproveitamento  Conceito&#13;&#10;  Entre 9.0 e 10.0        A&#13;&#10;  Entre 7.5 e 9.0         B&#13;&#10;  Entre 6.0 e 7.5         C&#13;&#10;  Entre 4.0 e 6.0         D&#13;&#10;  Entre 4.0 e zero        E&#13;&#10;"/>
+            <declare name="nota1, nota2, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite as duas notas obtidas:&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <assign variable="media" expression="(nota1 + nota2) / 2"/>
+            <if expression="media &gt;=9.0">
+                <then>
+                    <output expression="&quot;Sua nota &#233;: &quot; &amp; media &amp; &quot;, Tirou 'A' -  Voc&#234; foi APROVADO! :: Parab&#233;ns ::&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media &gt;=7.5 and media &lt;9">
+                        <then>
+                            <output expression="&quot;Sua nota &#233;: &quot; &amp; media &amp; &quot;, Tirou 'B' -  Voc&#234; foi APROVADO! :: Parab&#233;ns ::&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="media &gt;= 6.0 and media &lt;7.5">
+                                <then>
+                                    <output expression="&quot;Sua nota &#233;: &quot; &amp; media &amp; &quot;, Tirou 'C' -  Voc&#234; foi APROVADO! :: Quase ficou heim?! ::&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="media &gt;= 4.0 and media &lt;6">
+                                        <then>
+                                            <output expression="&quot;Sua nota &#233;: &quot; &amp; media &amp; &quot;, Tirou 'D' -  Voc&#234; foi Reprovado! :: Foi por pouco ::&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="media &gt;0 and media &lt;4">
+                                                <then>
+                                                    <output expression="&quot;Sua nota &#233;: &quot; &amp; media &amp; &quot;, Tirou 'E' -  Voc&#234; foi Reprovado! :: Pra voc&#234; ficar Ruim, vai ter que melhorar muito, que decep&#231;&#227;o! ::&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Nota Inv&#225;lida&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

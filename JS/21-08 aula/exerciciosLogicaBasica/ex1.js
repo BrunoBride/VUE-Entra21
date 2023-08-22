@@ -10,5 +10,8 @@ let numero2 = Number(prompt('Digite o segundo número: '))
 
 console.log('A soma dos números é: '+ (numero1 + numero2))
 
+//usando interpolação de dados
+console.log(`${n1} + ${n2} = ${n1+n2}`)
+
 
 

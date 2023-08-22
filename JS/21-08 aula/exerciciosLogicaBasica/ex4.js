@@ -10,3 +10,4 @@ let num2 = Number(prompt('Digite um segundo número diferente do anterior: '))
 let num3 = Number(prompt('Digite um terceiro número diferente dos anteriores: '))
 
 console.log('A soma dos valores informados é: '+(num1+num2+num3))
+console.log(`Soma é: ${num1+num2+num3}`)

@@ -8,8 +8,6 @@ const prompt = promptCall()
 let numero1 = Number(prompt('Digite o primeiro número: '))
 let numero2 = Number(prompt('Digite o segundo número: '))
 
-let div = numero1 - numero2
-
 console.log('A divisão dos números é: '+ (numero1 / numero2))
 
 

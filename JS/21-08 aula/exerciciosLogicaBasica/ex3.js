@@ -8,3 +8,6 @@ const prompt = promptCall()
 let num = Number(prompt('Digite um número: '))
 let raiz = Math.sqrt(num)
 console.log('Raíz quadrada: '+raiz)
+
+//interpolação
+console.log(`Raíz quadrada: ${raiz}`)
