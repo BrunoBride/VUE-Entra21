@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-18 08:56:28 "/>
+        <attribute name="created" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE4OyIwNzo0Mjo1NiAiOzIzNzM="/>
+        <attribute name="edited" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE4OyIwODo1NjoyOCAiOzQ7MjQ4OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="3.Fa&#231;a um Programa que verifique se uma letra digitada &#233; &quot;F&quot; ou &quot;M&quot; ou &#8220;O&#8221;. Conforme a letra escrever: F - Feminino, M - Masculino, O - Outro"/>
+            <declare name="letra" type="String" array="False" size=""/>
+            <output expression="&quot;Digite uma letra:&quot;" newline="True"/>
+            <input variable="letra"/>
+            <if expression="letra = &quot;m&quot; || letra = &quot;M&quot;">
+                <then>
+                    <output expression="&quot; A letra digitada foi: &quot;&amp;letra&amp; &quot; Masculino&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="letra = &quot;f&quot; || letra = &quot;F&quot;">
+                        <then>
+                            <output expression="&quot; A letra digitada foi: &quot;&amp;letra&amp; &quot; Feminino&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="letra = &quot;o&quot; || letra = &quot;O&quot;">
+                                <then>
+                                    <output expression="&quot; A letra digitada foi: &quot;&amp;letra&amp; &quot; Outro&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot; A letra digitada foi: &quot;&amp;letra&amp; &quot; N&#227;o foi a letra com palavra secreta&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

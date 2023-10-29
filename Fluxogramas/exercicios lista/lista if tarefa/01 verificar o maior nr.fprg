@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="entra21"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-18 07:54:37 "/>
+        <attribute name="created" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE4OyIwNzo0Mjo1NiAiOzIzNzM="/>
+        <attribute name="edited" value="ZW50cmEyMTtXSElURTAwNDsyMDIzLTA4LTE4OyIwNzo1NDozNyAiOzE7MjQ4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <comment text="1.Fa&#231;a um Programa que pe&#231;a dois n&#250;meros e imprima o maior deles."/>
+            <output expression="&quot;Digite o segundo n&#250;mero:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="n1 &gt; n2">
+                <then>
+                    <output expression="&quot;O primeiro n&#250;mero &#233; MAIOR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O segundo n&#250;mero &#233; MAIOR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
