@@ -1,7 +1,0 @@
-pai de mario é irmao do pai da julia.
-mario tem uma filha margarida.
-julia é de margarida?
-
-opcao: prima, tia, irma, nora
-
-r prima

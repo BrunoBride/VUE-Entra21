@@ -1,8 +1,0 @@
-algoritimo: escovar os dentes;
-
-1. pegar escova de dentes;
-2. colocar creme dental na escova;
-3. escovar os dentes;
-4. enxaguar a boca;
-5. secar as mãos;
-6. guardar os itens utilizados;
