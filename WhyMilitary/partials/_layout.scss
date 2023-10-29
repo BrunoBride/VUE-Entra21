@@ -1,0 +1,499 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+//bg home
+.bg-home {
+  position: relative;
+
+  img {
+    max-width: 350px;
+  }
+}
+
+.bg-home:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("../Assets/bg1.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
+}
+//---------------------------------------------------
+
+//hero
+.hero {
+  color: $white-normal;
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+
+  h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 46px;
+  }
+
+  p {
+    text-align: center;
+    padding: 14px;
+  }
+}
+
+.button-contact {
+  padding: 14px 28px;
+  color: $white-normal;
+  background-color: $red-normal;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+
+.button-contact:hover {
+  animation: scaleButton 0.8s infinite alternate;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+
+    h1 {
+      font-size: 34px;
+      padding: 0 14px;
+      width: 100%;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+}
+//---------------------------------------------------
+
+
+
+
+
+
+
+//sobre
+.about {
+  background-color: $primary-normal;
+  overflow: hidden;
+  color: $white-normal;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+
+  img {
+    max-width: 570px;
+  }
+}
+
+.about-content div {
+  flex: 1;
+}
+
+.about-description {
+  h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 14px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+//---------------------------------------------------
+
+
+
+
+// cartao de beneficios
+.benefits {
+  background-color: $white-normal;
+  color: $black-normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.benefits-header h2{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.benefits-grid{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.benefits-card{
+  padding: 1rem;
+  background-color: $primary-light;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.benefits-card:hover{
+  animation: scaleButton 0.8s infinite alternate;
+  background-color: $red-light;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.benefits-card span{
+  display: inline-block;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 3.75rem;
+  color: $white-normal;
+  border-radius: 5px;
+}
+
+.benefits-card h2{
+  margin-bottom: 0.5rem;
+  font-size: 28px;
+  color: $white-normal;
+}
+
+.benefits-card p{
+  line-height: 150%;
+  margin-bottom: 14px;
+  text-align: left;
+  max-width: 780px;
+  color: $white-normal;
+}
+@media screen and (max-width: 800px) {
+  .benefits-grid {
+    gap: 2px;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .benefits-grid {
+    gap: 2px;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+
+//---------------------------------------------------
+
+
+
+//services
+.services {
+  background-color: $primary-normal;
+  color: $white-normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.services-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+}
+
+.services-content p {
+  line-height: 150%;
+  margin-bottom: 14px;
+  text-align: center;
+  max-width: 780px;
+}
+
+.forcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+  // margin-bottom: 14px;
+}
+
+.arma {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $black-light;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgb(0, 0, 0, 0.45);
+
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    min-height: 180px;
+    transition: transform 0.2s;
+  }
+}
+
+.arma img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.arma-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: $black-light;
+  z-index: 99;
+}
+
+.arma-info a {
+  color: $white-normal;
+  background-color: $red-normal;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+  // cursor: default;
+}
+
+.arma-info a:hover {
+  animation: scaleButton 0.8s infinite alternate;
+}
+
+@media screen and (max-width: 800px) {
+  .forcas {
+    flex-direction: column;
+  }
+  .arma img {
+    max-width: 700px;
+  }
+  .services{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .arma-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    // font-size: 16px;
+  }
+  .arma-info button {
+    font-size: 10px;
+  }
+}
+//---------------------------------------------------
+
+//footer
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: $white-normal;
+  p {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 64px;
+    color: $white-dark;
+    transition: transform 0.4s;
+  }
+}
+
+.footer-icons {
+  display: flex;
+  gap: 8px;
+  color: $white-normal;
+}
+//---------------------------------------------------
+
+//btn-whatsapp
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+
+  img {
+    max-width: 64px;
+    transition: transform 0.4s;
+  }
+
+  img:hover{
+    transform: scale(1.1);
+  }
+}
+
+.btn-whatsapp .tooltip-text{
+  visibility: hidden;
+  position: absolute;
+  width: 130px;
+  top: 8px;
+  left: -145px;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: $black-normal;
+  color: $white-normal;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+  visibility: visible ;
+  opacity: 1;
+}
+@media screen and (max-width: 800px) {
+  .btn-whatsapp{
+    img {
+      max-width: 48px;
+      }
+  }
+  .btn-whatsapp .tooltip-text{
+    font-size: 12px;
+  }
+}
+//---------------------------------------------------
+
+//formulario
+.registration {
+  background-color: $secondary-light;
+  color: $white-light;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(239, 230, 230, 0.1);
+  max-width: 800px;
+  margin: 24px auto;
+  text-align: center;
+  gap: 24px;
+}
+
+.registration h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.registration p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.registration form {
+  text-align: left;
+}
+
+.registration label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.registration input[type="text"],
+.registration input[type="email"],
+.registration input[type="tel"],
+.registration input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.registration select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.registration input[type="submit"] {
+  background-color: $red-normal;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.registration input[type="submit"]:hover {
+  background-color:$red-normal;
+}
+
+/* Estilo para as mensagens de erro, se necessário */
+.error-message {
+  color: #ff0000;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+
+//---------------------------------------------------
